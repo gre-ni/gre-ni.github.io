@@ -11,7 +11,6 @@ html {
 }
 
 body {
-    margin: 0px;
     font-family: var(--font-main);
     font-size: 1.125rem; 
     color: var(--color-primary);
@@ -28,11 +27,13 @@ body {
 
 h1 {
     font-size: 4.6rem;
-    line-height: 5.7rem;
+    line-height: 1.2;
 }
 
 h2 {
     font-size: 2.6rem;
+    margin-top: 5rem;
+    margin-bottom: 0.3rem;
 }
 
 p {
@@ -46,12 +47,11 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: static;
     padding: 3rem;
 }
 
 .logo img {
-    height: 50px;
+    height: auto;
     padding-left: 1rem;
 }
 
@@ -68,11 +68,12 @@ p {
     font-family: var(--font-main);
     font-size: 1rem;
     letter-spacing: 0.1rem;
-    padding: 1rem;
+    padding: 1rem; /* Space between individual items */
 }
 
 .links a:hover {
     color: var(--color-secondary);
+    transition: color 0.2s ease-in-out;
 }
 
 /* General block styling */
@@ -80,70 +81,57 @@ p {
 .block {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    width: 80%;
+    margin: 0 auto; /* Centering block element itself */
+    width: 80%; /* Later remake to max width limit with media responsive width */
     height: fit-content;
-    background-color:#242422;
 }
 
 .block p {
-    width: 60%;
+    width: 60%; /* Aesthetic decision */
 }
-
 
 /* About section */
-
-#about {
-    display: flex;
-    justify-content: center;
-}
 
 #about h1 {
     margin-top: 1.2rem;
     margin-bottom: 0.1rem;
 }
 
-
 /* Projects section */
-
-#projects {
-    display: flex;
-    justify-content: center;
-}
-
-#projects h2 {
-    margin-top: 5rem;
-    margin-bottom: 0.3rem;
-}
 
 .gallery {
     display: inline-flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 2rem;
     align-content: center;
-    margin-bottom: 3rem;
+    margin: 2rem;
 }
 
 .gallery-item {
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    padding: 15px;
 }
 
-.gallery-item img {
-    width: 300px;
+.gallery-item p {
+    width: auto;
 }
 
 /* Contact info: */
 
 #contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    margin-top: 50px;
-    height: 150px;
 }
 
 /* Footer: */
+
 footer {
     margin-top: 6rem;
     color: var(--color-secondary);
