@@ -51,9 +51,11 @@ p {
     padding: 3rem;
 }
 
-.logo img {
-    height: auto;
-    padding-left: 1rem;
+.logo svg {
+    height: 1.3rem;
+    padding-left: 2rem;
+    padding-top: 0.7rem;
+    fill: var(--color-primary);
 }
 
 .links {
