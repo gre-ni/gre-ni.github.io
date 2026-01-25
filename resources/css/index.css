@@ -12,7 +12,8 @@ html {
 
 body {
     font-family: var(--font-main);
-    font-size: 1.125rem; 
+    font-size: 1.2rem; 
+    line-height: 1.45;
     color: var(--color-primary);
     background-color: var(--color-background);
     text-align: center;
@@ -88,6 +89,7 @@ p {
 }
 
 .block p {
+    margin-top: 2.6rem;
     width: 60%; /* Aesthetic decision */
 }
 
