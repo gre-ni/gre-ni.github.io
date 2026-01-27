@@ -134,6 +134,17 @@ p {
     text-align: center;
 }
 
+.socials-icons {
+    display: inline-flex;
+    margin-top: 1.6rem;
+    gap: 1rem;
+}
+
+.socials-icons img {
+    width: 1.6rem;
+    padding: 0.5rem;
+}
+
 /* Footer: */
 
 footer {
